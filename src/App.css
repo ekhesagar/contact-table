@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+
+.header h1{
+    text-align: center;
+}
+.contact-table {
+    width: 80%;
+    margin: 50px auto;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-bottom: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-table thead {
+    visibility: visible;
+    background: #fafafa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-table tr {
+    border: 2px solid #ddd;
+    padding: 5px;
+    margin-bottom: 0;
+    display: table-row;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contact-table tr:nth-child(even) {
+    background: #fafafa;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-table th {
+    font-size: 16px;
+    height: 28px;
+    text-align: left;
+    color: #767676;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-table tr th:first-child{
+    padding-left: 50px;
+}
+
+.contact-table td {
+    display: table-cell;
+    text-align: left;
+    font-size: 16px;
+    height: 42px;
+    border-bottom: none;
+}
+
+.contact-table td:last-child {
+    border-bottom: none;
+}
+
+.contact-table td:before {
+    content: "";
+    float: left;
+    display: none;
+}
+
+.checkbox-label {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+.select-span select{
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 2px solid #ddd;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-table thead {
+        visibility: hidden;
+        font-size: 16px;
+        
+    }
+    .contact-table tr {
+        display: block;
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 10px;
+    }
+    .contact-table td {
+        display: block;
+        text-align: right;
+        padding: 5px;
+        font-size: 16px;
+        border-bottom: 1px dotted #ddd;
+    }
+    .contact-table td:before {
+        content: attr(data-label);
+        display: block;
+        color: #767676;
+        text-transform: capitalize;
+    }
+
+    .checkbox-label{
+        display: none;
+    }
 }
