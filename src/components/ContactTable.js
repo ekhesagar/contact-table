@@ -12,7 +12,7 @@ const ContactTable = () => {
     fetch("https://cors-anywhere.herokuapp.com/https://sahmed93846.api-us1.com/api/3/contacts?status=-1&orders%5Bemail%5D=ASC", {
       "method": "GET",
       "headers": {
-        'Api-Token': process.env.REACT_APP_API_KEY,
+         'Api-Token': process.env.REACT_APP_API_KEY,
         'Accept': 'json'
       }
     })

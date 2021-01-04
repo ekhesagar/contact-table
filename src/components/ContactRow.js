@@ -20,7 +20,11 @@ const select = <select>
       <td data-label='name'> <label className='checkbox-label'><input type='checkbox' value={check} onChange={handleChange} /> </label> {contact.firstName} {contact.lastName} </td>
       <td data-label='phone'>{contact.phone}</td>
       <td data-label='email'>{contact.email}
-      <span className='select-span'>{check && select}</span>
+      </td>
+      <td id='row-control'>
+        <span className='select-span'>
+          {check && select}
+        </span>
       </td>
     </tr>
   )

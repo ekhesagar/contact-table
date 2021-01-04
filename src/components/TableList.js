@@ -17,6 +17,7 @@ const TableList = ({contacts})=>{
           <th>Name</th>
           <th>Phone</th>
           <th>Email</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>{rows}</tbody>

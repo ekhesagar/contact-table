@@ -1,6 +1,14 @@
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Description
+
+    It is a React based application which displays list of contacts in the form of a table. The data has been acquired from an API https://sahmed93846.api-us1.com/api/3/contacts?status=-1&orders%5Bemail%5D=ASC which requires a header that holds api key for authorization using fetch library. To avoid the cors issue https://cors-anywhere.herokuapp.com url is appended to the main api. To prevent any malicious activity the api key is hidden by using environmental variable. Received data is stored in state and passed on to reusable child component. Click event is added to the checkbox element, which on click shows the row control element. The table breaks down into small tables for each data entry for multiple screen sizes.
+    
+    ![picture](activecamp.png)
 
 ## Available Scripts
 

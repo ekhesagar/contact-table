@@ -24,7 +24,7 @@
 }
 
 .contact-table tr:nth-child(even) {
-    background: #fafafa;
+    background: #eeeded;
 }
 
 .contact-table th {
@@ -44,6 +44,7 @@
     font-size: 16px;
     height: 42px;
     border-bottom: none;
+    width: 30%
 }
 
 .contact-table td:last-child {
@@ -60,11 +61,12 @@
     margin-right: 12px;
     margin-left: 12px;
 }
+
 .select-span select{
     padding: 5px;
     border-radius: 5px;
     margin-left: 10px;
-    border: 2px solid #ddd;
+    border: 2px solid rgb(177, 175, 175);
 }
 
 @media screen and (max-width: 600px) {
@@ -75,13 +77,16 @@
     }
     .contact-table tr {
         display: block;
+        padding: 0px;
         border-bottom: 2px solid #ddd;
         margin-bottom: 10px;
     }
     .contact-table td {
         display: block;
         text-align: right;
-        padding: 5px;
+        width: 95%;
+        padding: 5px 5px 0px;
+        /* padding: 5px; */
         font-size: 16px;
         border-bottom: 1px dotted #ddd;
     }
@@ -91,8 +96,11 @@
         color: #767676;
         text-transform: capitalize;
     }
-
     .checkbox-label{
         display: none;
+    }
+    #row-control{
+        border: none;
+        display:none !important
     }
 }
